@@ -2160,3 +2160,92 @@ section {
     font-size: 1.2rem;
   }
 }
+
+/* ============================================
+   CONTACT PAGE MOBILE FIXES
+   ============================================ */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .contact-info {
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .contact-item i {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .map-container {
+    height: 300px;
+    margin-top: 2rem;
+  }
+
+  /* Ensure form elements are mobile-friendly */
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .contact-item i {
+    font-size: 1.5rem;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}
+
+/* Ensure contact section is full width on mobile */
+.contact-section {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-section .section-container {
+  width: 100%;
+  max-width: 100%;
+}

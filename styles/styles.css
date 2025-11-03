@@ -412,12 +412,46 @@ section {
   margin-top: 3rem;
 }
 
+/* ============================================
+   FIX: MOBILE SERVICE CARDS
+   ============================================ */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .service-card img {
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  .section-container {
+    padding: 0 1.2rem;
   }
 }
 
+@media (max-width: 480px) {
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p,
+  .service-card li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+/* ============================================
+   SERVICE CARD STYLE
+   ============================================ */
 .service-card {
   background: rgba(30, 78, 126, 0.3);
   border: 1px solid rgba(58, 123, 200, 0.3);
